@@ -16,6 +16,17 @@ export async function getStaticProps() {
   return {
     props: {
       meetups: getAllEvents()
-    }
+    },
+    revalidate: 10
   };
 };
+
+// export async function getServerSideProps(context) {
+//   const { req, res } = context;
+
+//   return {
+//     props: {
+//       meetups: getAllEvents()
+//     }
+//   };
+// };
