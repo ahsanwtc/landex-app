@@ -49,7 +49,7 @@ export const getStaticPaths = async () => {
     //   { params: { meetupId: 'e3' }}
     // ],
     paths,
-    fallback: false
+    fallback: 'blocking'
   };
 };
 
