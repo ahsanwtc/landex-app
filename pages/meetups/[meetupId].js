@@ -1,9 +1,18 @@
 import { MongoClient, ObjectId } from 'mongodb';
+import Head from 'next/head';
 
 import MeetupDetailsReact from "../../components/meetups/MeetupDetails";;
 
 const MeetupDetails = ({ meetup }) => {
-  return <MeetupDetailsReact {...meetup} />;
+  return (
+    <>
+      <Head>
+        <title>{meetup.title}</title>
+        <meta name='description' content={meetup.description} />
+      </Head>
+      <MeetupDetailsReact {...meetup} />
+    </>
+  );
 };
 
 export const getStaticProps = async context => {
