@@ -1,5 +1,5 @@
 import { MongoClient } from 'mongodb';
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 import MeetupList from '../components/meetups/MeetupList';
 
@@ -7,10 +7,7 @@ export default function Home(props) {
   const { meetups } = props;
   return (
     <>
-      <Head>
-        <title>React Meetups</title>
-        <meta name='description' content='Browse a huge list of highly active React meetups!' />
-      </Head>
+      <NextSeo title="React Meetups" description="Browse a huge list of highly active React meetups!"/>
       <MeetupList meetups={meetups} />
     </>
   )
