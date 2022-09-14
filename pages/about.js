@@ -1,6 +1,11 @@
+import { Hero, Contact } from '../components';
+
 const About = () => {
   return (
-    <div>About page</div>
+    <div>
+      <Hero heading='Contact' message='Submit the form below for work and quotes.' />
+      <Contact />
+    </div>
   );
 };
 
