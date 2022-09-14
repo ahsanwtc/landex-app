@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Hero } from '../components';
+import { Hero, Slider } from '../components';
+
+import sliderData from '../data';
 
 export default function Home() {
   return (
@@ -11,6 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero heading='Landex App' message='Decentralized marketplace for property.' />
+      <Slider data={sliderData} />
     </div>
   )
 }
