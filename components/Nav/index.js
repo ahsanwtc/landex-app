@@ -44,10 +44,10 @@ const Nav = () => {
         {/* Mobile Menu */}
         <div className={`mobile-menu ${nav ? 'left-0' : 'left-[-100%]'}`}>
           <ul>
-            <li className='p-4 text-4xl hover:text-gray-500'><Link href='/'>Home</Link></li>
-            <li className='p-4 text-4xl hover:text-gray-500'><Link href='/mint'>Mint</Link></li>
-            <li className='p-4 text-4xl hover:text-gray-500'><Link href='/#market'>Market</Link></li>
-            <li className='p-4 text-4xl hover:text-gray-500'><Link href='/about'>About</Link></li>
+            <li className='p-4 text-4xl hover:text-gray-500' onClick={handleNavButton}><Link href='/'>Home</Link></li>
+            <li className='p-4 text-4xl hover:text-gray-500' onClick={handleNavButton}><Link href='/mint'>Mint</Link></li>
+            <li className='p-4 text-4xl hover:text-gray-500' onClick={handleNavButton}><Link href='/#market'>Market</Link></li>
+            <li className='p-4 text-4xl hover:text-gray-500' onClick={handleNavButton}><Link href='/about'>About</Link></li>
           </ul>
         </div>
 
