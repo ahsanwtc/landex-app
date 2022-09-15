@@ -13,8 +13,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero heading='Landex App' message='Decentralized marketplace for property.' />
-      <Slider slides={slides} />
-      <Instagram snaps={snaps} />
+      {/* <Slider slides={slides} />
+      <Instagram snaps={snaps} /> */}
     </div>
   )
 }

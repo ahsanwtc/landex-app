@@ -23,22 +23,40 @@ const Nav = () => {
   }, []);
 
   return (
-    <div className='fixed left-0 top-0 w-full z-10 ease-in duration-300' style={{ backgroundColor: color }}>
-      <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
-        <Link href='/'>
-          <h1 className='font-bold text-4xl' style={{ color: textColor }}>Landex</h1>
-        </Link>
+    <nav className="fixed w-full bg-gray-800">
+      <div className="container m-auto px-6 md:px-12 lg:px-6">
         
-        <ul className='hidden sm:flex' style={{ color: textColor }}>
-          <li className='p-4'><Link href='/'>Home</Link></li>
-          <li className='p-4'><Link href='/mint'>Mint</Link></li>
-          <li className='p-4'><Link href='/#market'>Market</Link></li>
-          <li className='p-4'><Link href='/about'>About</Link></li>
-        </ul>
+        <div className="flex flex-wrap items-center justify-between py-6 gap-6 md:py-4 md:gap-0">
+          <div className="w-full flex justify-between cursor-pointer lg:w-auto">
+            <Link href='/'><h1 className='font-bold text-4xl'>Landex</h1></Link>
 
-        {/* Mobile Button */}
-        <div className='block sm:hidden z-10' onClick={handleNavButton}>
-          {nav ? <AiOutlineClose size={20} style={{ color: textColor }}/> : <AiOutlineMenu size={20} style={{ color: textColor }}/>}
+            {/* Mobile Button */}
+            <div className='block lg:hidden z-10' onClick={handleNavButton}>
+              {nav ? <AiOutlineClose size={20} style={{ color: textColor }}/> : <AiOutlineMenu size={20} style={{ color: textColor }}/>}
+            </div>
+          </div>
+
+          <div className="hidden w-full bg-gray-800 md:space-y-0 md:p-0 md:flex-nowrap md:bg-transparent lg:w-auto lg:flex">
+            <div className="block w-full lg:items-center lg:flex">
+              <ul className="space-y-6 pb-6 tracking-wide font-medium text-white lg:pb-0 lg:pr-6 lg:items-center lg:flex lg:space-y-0">
+                <li className='cursor-pointer p-4'>
+                  <Link href='/mint' className="block md:px-3">
+                    <span>Mint</span>
+                  </Link>
+                </li>
+                <li className='cursor-pointer p-4'>
+                  <Link href='/market' className="block md:px-3">
+                    <span>Market</span>
+                  </Link>
+                </li>
+                <li className='cursor-pointer p-4'>
+                  <Link href='/about' className="block md:px-3">
+                    <span>About</span>
+                  </Link>
+                </li>                            
+              </ul>
+            </div>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -46,14 +64,14 @@ const Nav = () => {
           <ul>
             <li className='p-4 text-4xl hover:text-gray-500' onClick={handleNavButton}><Link href='/'>Home</Link></li>
             <li className='p-4 text-4xl hover:text-gray-500' onClick={handleNavButton}><Link href='/mint'>Mint</Link></li>
-            <li className='p-4 text-4xl hover:text-gray-500' onClick={handleNavButton}><Link href='/#market'>Market</Link></li>
+            <li className='p-4 text-4xl hover:text-gray-500' onClick={handleNavButton}><Link href='/market'>Market</Link></li>
             <li className='p-4 text-4xl hover:text-gray-500' onClick={handleNavButton}><Link href='/about'>About</Link></li>
           </ul>
         </div>
 
 
       </div>
-    </div>
+    </nav>
   );
 };
 
