@@ -6,7 +6,7 @@
 html {
   scroll-behavior: smooth;
   font-family: 'Urbanist', 'Rubik', 'Raleway', sans-serif;
-  @apply dark:bg-gray-700 text-white
+  @apply dark:bg-gray-700 text-blue-100
 }
 
 .custom-image {
@@ -15,6 +15,14 @@ html {
 
 .mobile-menu {
   @apply lg:hidden absolute top-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300 z-0
+}
+
+.text-heading {
+  @apply text-blue-300
+}
+
+.text-normal {
+  @apply text-blue-100
 }
 
 @tailwind utilities;

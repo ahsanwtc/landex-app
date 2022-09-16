@@ -38,7 +38,7 @@ const Nav = () => {
 
           <div className="hidden w-full bg-gray-800 md:space-y-0 md:p-0 md:flex-nowrap md:bg-transparent lg:w-auto lg:flex">
             <div className="block w-full lg:items-center lg:flex">
-              <ul className="space-y-6 pb-6 tracking-wide font-medium text-white lg:pb-0 lg:pr-6 lg:items-center lg:flex lg:space-y-0">
+              <ul className="space-y-6 pb-6 tracking-wide font-medium lg:pb-0 lg:pr-6 lg:items-center lg:flex lg:space-y-0">
                 <li className='cursor-pointer p-4'>
                   <Link href='/mint' className="block md:px-3">
                     <span>Mint</span>

@@ -3,46 +3,17 @@ import { GrMapLocation } from 'react-icons/gr';
 import { FaSearchLocation } from 'react-icons/fa';
 
 const Hero = ({ heading, message }) => {
+	message = 'Onchain solution for buying, selling and trading your realestate. Own the rights to your property by simply holding the token in your wallet. And like any token, lend it, trade it or sell it.';
+	const subtitle = 'The best solution for tokenizing real world assets.';
   return (
     <>
     <div className="pt-32 pb-20 md:pt-40">
       <div className="container m-auto px-6 md:px-12 lg:px-6">
         <div className="lg:flex lg:items-center lg:gap-x-16">
             <div className="space-y-8 lg:w-7/12">
-                <h1 className=" font-bold text-orange-50 text-4xl md:text-5xl">Realestate Onchain</h1>
-                <p className="text-gray-600 lg:w-11/12">
-                    DailyBot takes chat and collaboration to the next level: daily standups, team check-ins, surveys, kudos, best companion bot for your virtual watercooler, 1:1 intros, motivation tracking and more.
-                </p>
-
-                <span className="block font-semibold">The best companion bot for your chat app.</span>
-
-                <div className="grid grid-cols-3 space-x-4 md:space-x-6 md:flex">
-                    <a aria-label="add to slack" href="#" className="p-4 border border-gray-200 rounded-md hover:border-cyan-400 hover:shadow-lg">
-                        <div className="flex justify-center space-x-4">
-                          <FaSearchLocation size={24} style={{ color: 'cyan' }} className="w-6"/>
-                            <span className="hidden font-medium md:block">Add to Slack</span>
-                        </div>
-                    </a>    
-                    <a aria-label="add to chat" href="#" className="p-4 border border-gray-200 rounded-md hover:border-green-400 hover:shadow-lg">
-                        <div className="flex justify-center space-x-4">
-                            <img className="w-6" src="images/chat.png" alt="chat logo" loading="lazy" width="128" height="128" />
-                            <span className="hidden font-medium md:block">Add to Google Chat</span>
-                        </div>
-                    </a>   
-                    <a aria-label="add to zoom" href="#" className="p-4 border border-gray-200 rounded-md hover:border-blue-400 hover:shadow-lg">
-                        <div className="flex justify-center space-x-4">
-                            <img className="w-6" src="images/zoom.png" alt="chat logo" loading="lazy" width="128" height="128" />
-                            <span className="hidden font-medium md:block">Add to Zoom</span>
-                        </div>
-                    </a>    
-                </div>
-
-                <div>
-                    🔥🌟 
-                    <span>Other integrations :</span> 
-                    <a href="#" className="font-semibold text-gray-700">Discord,</a>
-                    <a href="#" className="font-semibold text-gray-700">Telegram</a>
-                </div>
+                <h1 className=" font-bold text-heading text-4xl md:text-5xl">Realestate Onchain</h1>
+                <p className="lg:w-11/12">{message}</p>
+                <span className="block font-semibold">{subtitle}</span>
             </div>
 
             <div hidden className="lg:block lg:w-5/12">
