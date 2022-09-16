@@ -1,10 +1,10 @@
-import { Hero } from "../components";
+import { Map } from "../components";
 
 const Mint = () => {
   return (
-    <div>
-      
-    </div>
+  
+      <Map />
+
   );
 };
 

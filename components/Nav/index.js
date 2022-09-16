@@ -23,7 +23,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className="fixed w-full bg-gray-800">
+    <nav className="w-full bg-gray-800">
       <div className="container m-auto px-6 md:px-12 lg:px-6">
         
         <div className="flex flex-wrap items-center justify-between py-6 gap-6 md:py-4 md:gap-0">
